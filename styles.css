@@ -18,7 +18,7 @@ header{
 
 h1{
     font-family: 'Montserrat';
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     position: absolute;
     top: 5%;
@@ -201,6 +201,7 @@ h3{
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: start !important;
     background-color: white;
     padding: 1rem;
     display: inline-block;
@@ -209,6 +210,10 @@ h3{
     vertical-align: top;
     justify-content: center;
     transition: transform 0.5s ease-in-out;
+}
+.me{
+  width: 50rem;
+  height:30rem;
 }
 .tex{
   width: 23rem;
@@ -232,7 +237,7 @@ h3{
 /*NoTitle Main*/
 .notitle{
     text-align: center;
-    background-color: #ebebeb;
+    background-color: #FFC62F;
     padding: 1rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -270,18 +275,18 @@ h3{
     background-color: white;
     background-position: right bottom;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     /* styles for screens with a maximum width of 600px */
   
     /* For Header On Each Page */
     header {
       /* reduce the height of the header */
-      height: 4rem;
+      height: 3rem;
     }
   
     /* reduce the size of the header title */
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   
     /* reduce the padding on the left and right navigation links */
@@ -316,8 +321,8 @@ h3{
   
     /* reduce the size of the images on the product pages */
     .images img {
-      width: 11.5rem;
-      height: 15rem;
+      width: 20rem;
+      height: 10rem;
     }
   
     /* reduce the margin on the "Coming Soon" images on the homepage */
@@ -350,8 +355,84 @@ h3{
     }
     .footer{
         padding: .1rem;
+        position: relative;
     }
     .footershop{
         padding: .1rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+  /* styles for screens with a maximum width of 400px */
+   /* For Header On Each Page */
+   header {
+    /* reduce the height of the header */
+    height: 3rem;
+  }
+
+  /* reduce the size of the header title */
+  h1 {
+    font-size: 1rem;
+  }
+
+  /* reduce the padding on the left and right navigation links */
+  header nav div a {
+    font-size: .5rem;
+    padding: 0.5rem;
+  }
+    /* reduce the size of the shopping cart icon */
+    header nav .right a img {
+      height: 1rem;
+    }
+  
+    /* reduce the size of the textarea in the contact form */
+    form .M textarea {
+      height: 10rem;
+      width: 12.5rem;
+    }
+  
+    /* reduce the size of the submit button in the contact form */
+    form .actions input[type="submit"] {
+      width: 12.5rem;
+      height: 1.5rem;
+      font-size: 1rem;
+    }
+  
+    /* reduce the margin on the images on the product pages */
+    .images {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  
+    /* reduce the size of the images on the product pages */
+    .images img {
+      width: 100%;
+      height: 12rem;
+    }
+  
+    /* reduce the width of the main section on the homepage */
+    .featured,
+    .notitle {
+      max-width: 75%;
+    }
+  
+    /* reduce the size of the image in the shopping cart */
+    .first {
+      height: 50px;
+      width: 50px;
+    }
+    /*reduce the size of the headers under the images */
+    h3{
+        font-size: .65rem;
+    /*reduce the size of the footers*/
+    }
+    .footer{
+        padding: .1rem;
+        position: relative;
+    }
+    .footershop{
+        padding: .1rem;
+    }
+    .tex{
+      width: 100%;
     }
 }
